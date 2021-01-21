@@ -5,7 +5,7 @@ import env
 # import env # needed for development unittesting
 
 app = Flask(__name__)
-app.secret_key = "ef1036f173ca401296277fcd08fa678e"
+#app.secret_key = "ef1036f173ca401296277fcd08fa678e"
 score_data = 'data/scoreboard.txt'
 riddle_json = 'data/riddle_data.json'
 
