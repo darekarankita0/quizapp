@@ -3,7 +3,7 @@ from helper import *
 # import env # needed for development unittesting
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("Z!5M[}mPkVXOI,_J`|3pgjbRcsV(qNLL+UK;:@%lAhON1p:!6i(*4x;>W_+YS8d,lCSy_cyh,lHV9F;+oZa)7Xl;lC?zf~{5K0.U")
+#app.secret_key = os.environ.get("Z!5M[}mPkVXOI,_J`|3pgjbRcsV(qNLL+UK;:@%lAhON1p:!6i(*4x;>W_+YS8d,lCSy_cyh,lHV9F;+oZa)7Xl;lC?zf~{5K0.U")
 score_data = 'data/scoreboard.txt'
 riddle_json = 'data/riddle_data.json'
 
