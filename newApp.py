@@ -203,8 +203,17 @@ def js_leaderboard_no_login():
                            message=message)
 
 
-if __name__ == '__main__':
-    app.run(debug=False)
+if __name__ == "__main__":
+    app.secret_key = 'Z!5M[}mPkVXOI,_J`|3pgjbRcsV(qNLL+UK;:@%lAhON1p:!6i(*4x;>W_+YS8d,lCSy_cyh,lHV9F;+oZa)7Xl;lC?zf~{5K0.U'
+    app.config['SESSION_TYPE'] = 'filesystem'
+
+    sess.init_app(app)
+
+app.debug = True
+app.run()
+
+#if __name__ == '__main__':
+    #app.run(debug=False)
     #app.run(host=os.environ.get('IP'),
             #port=int(os.environ.get('PORT')),
             #debug=False)
